@@ -24,12 +24,12 @@ const Home = () => {
         <div>
             <Navbar />
             <div className="content">
-                <div className="container px-5">
+                <div className="container px-sm-5 px-3">
                     <Sliders imgs={banners} />
                     <div className="">
-                        <div className='py-5 categories-lists row gx-1'>
+                        <div className='py-5 categories-lists row gx-1 gy-1'>
                             {categories.map((category, key) => (
-                                <div key={key} className='col-2'>
+                                <div key={key} className='col-lg-2 col-sm-4 col-6'>
                                     <Categories data={category} />
                                 </div>
                             ))}
@@ -38,7 +38,7 @@ const Home = () => {
                             <h4 className='normal-text-color fw-semibold mb-4'>Popular Products</h4>
                             <div className="row gx-3 gy-4">
                                 {popularProducts.map((product, key) => (
-                                    <div key={key} className='col-3'>
+                                    <div key={key} className='col-lg-3 col-md-4 col-6'>
                                         <Product data={product} />
                                     </div>
                                 ))}
@@ -48,7 +48,7 @@ const Home = () => {
                             <h4 className='normal-text-color fw-semibold mb-4'>Latest Products</h4>
                             <div className="row gx-3 gy-4">
                                 {latestProducts.map((product, key) => (
-                                    <div key={key} className='col-3'>
+                                    <div key={key} className='col-lg-3 col-md-4 col-6'>
                                         <Product data={product} />
                                     </div>
                                 ))}

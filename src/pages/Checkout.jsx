@@ -11,9 +11,9 @@ const Checkout = () => {
                 <div className="container py-5">
                     <h5 className='normal-text-color fw-semibold pb-4'>Make Payments</h5>
                     <div className="row">
-                        <div className="col-8">
+                        <div className="col-md-8">
                             <div className='bg-white p-4'>
-                                <div className='d-flex justify-content-between'>
+                                <div className='d-flex justify-content-between flex-wrap'>
                                     <div>
                                         <img src="" alt="" />
                                         <p className='fw-semibold'>Goldstar Shoe</p>
@@ -31,13 +31,14 @@ const Checkout = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4 pt-md-0 pt-4">
                             <div className="bg-white">
                                 <div className="p-4">
                                     <h5 className='normal-text-color fw-semibold'>Order Summary</h5>
                                     <p className='mb-1'><span className="normal-text-color">Items Total:</span> 2000</p>
                                     <p className='mb-1'><span className="normal-text-color">Delivery Fee:</span> 100</p>
                                     <p><span className="normal-text-color">Total:</span> 2100</p>
+                                    <button className='normal-bg-color border-0 text-white px-3 py-1 rounded-2'>Checkout</button>
                                 </div>
                             </div>
                         </div>

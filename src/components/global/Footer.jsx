@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className='normal-bg-color'>
             <div className="container py-5">
-                <div className='d-flex text-white align-items-center justify-content-between'>
+                <div className='d-flex text-white align-items-center justify-content-between flex-wrap'>
                     <div>
                         <p className='fw-semibold'>About</p>
                         <p>Contact Us</p>

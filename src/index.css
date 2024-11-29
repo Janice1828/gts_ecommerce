@@ -28,3 +28,16 @@
 .normal-bg-color {
   background: var(--normal-color);
 }
+@media screen and (max-width: 992px) {
+  .banner {
+    height: 400px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner {
+    height: 350px !important;
+  }
+  .product-detail-container {
+    width: 90% !important;
+  }
+}

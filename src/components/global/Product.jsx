@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Product = ({ data }) => {
     return (
-        <Link to="/productdetail" className='text-decoration-none'>
+        <Link to={`/productdetail?id=${data.id}`} className='text-decoration-none'>
             <div className='bg-white w-100'>
                 <img src={data.image} alt="" className='w-100 object-fit-cover' style={{ height: "200px" }} />
                 <div className="p-2">

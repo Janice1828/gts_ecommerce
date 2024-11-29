@@ -6,13 +6,13 @@ const Sliders = ({ imgs }) => {
         <div id="carouselExampleFade" className="carousel slide carousel-fade">
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={img1} className="d-block w-100 object-fit-cover" alt="..." style={{ height: "500px" }} />
+                    <img src={img1} className="d-block w-100 object-fit-cover banner" alt="..." style={{ height: "500px" }} />
                 </div>
                 <div className="carousel-item">
-                    <img src={img2} className="d-block w-100 object-fit-cover" alt="..." style={{ height: "500px" }} />
+                    <img src={img2} className="d-block w-100 object-fit-cover banner" alt="..." style={{ height: "500px" }} />
                 </div>
                 <div className="carousel-item">
-                    <img src={img3} className="d-block w-100 object-fit-cover" alt="..." style={{ height: "500px" }} />
+                    <img src={img3} className="d-block w-100 object-fit-cover banner" alt="..." style={{ height: "500px" }} />
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
