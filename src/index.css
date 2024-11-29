@@ -23,7 +23,7 @@
   border-radius: 50%;
 }
 .normal-text-color {
-  color: var(--normal-color);
+  color: var(--normal-color) !important;
 }
 .normal-bg-color {
   background: var(--normal-color);

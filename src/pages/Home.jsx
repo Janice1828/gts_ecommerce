@@ -24,33 +24,35 @@ const Home = () => {
         <div>
             <Navbar />
             <div className="content">
-                <div className="container">
+                <div className="container px-5">
                     <Sliders imgs={banners} />
-                    <div className='py-5 categories-lists row gx-1'>
-                        {categories.map((category, key) => (
-                            <div key={key} className='col-2'>
-                                <Categories data={category} />
-                            </div>
-                        ))}
-                    </div>
-                    <div className="popular-products">
-                        <h4 className='normal-text-color fw-semibold mb-4'>Popular Products</h4>
-                        <div className="row gx-3 gy-4">
-                            {popularProducts.map((product, key) => (
-                                <div key={key} className='col-3'>
-                                    <Product data={product} />
+                    <div className="">
+                        <div className='py-5 categories-lists row gx-1'>
+                            {categories.map((category, key) => (
+                                <div key={key} className='col-2'>
+                                    <Categories data={category} />
                                 </div>
                             ))}
                         </div>
-                    </div>
-                    <div className="latest-products py-5">
-                        <h4 className='normal-text-color fw-semibold mb-4'>Latest Products</h4>
-                        <div className="row gx-3 gy-4">
-                            {latestProducts.map((product, key) => (
-                                <div key={key} className='col-3'>
-                                    <Product data={product} />
-                                </div>
-                            ))}
+                        <div className="popular-products">
+                            <h4 className='normal-text-color fw-semibold mb-4'>Popular Products</h4>
+                            <div className="row gx-3 gy-4">
+                                {popularProducts.map((product, key) => (
+                                    <div key={key} className='col-3'>
+                                        <Product data={product} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="latest-products py-5">
+                            <h4 className='normal-text-color fw-semibold mb-4'>Latest Products</h4>
+                            <div className="row gx-3 gy-4">
+                                {latestProducts.map((product, key) => (
+                                    <div key={key} className='col-3'>
+                                        <Product data={product} />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
