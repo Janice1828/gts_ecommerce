@@ -1,0 +1,18 @@
+[
+  {
+    "categoryName": "Accessories",
+    "img": "../images/accessories.jpg"
+  },
+  {
+    "categoryName": "Fashion",
+    "img": "../images/fashion.jpg"
+  },
+  {
+    "categoryName": "Cosmetics",
+    "img": "../images/cosmetics.jpg"
+  },
+  {
+    "categoryName": "Sports",
+    "img": "../images/sports.jpg"
+  }
+]

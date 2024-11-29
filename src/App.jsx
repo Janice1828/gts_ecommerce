@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
-
+import { BrowserRouter, data } from 'react-router-dom'
+import Home from './pages/Home'
+import Productlist from './pages/Productlist'
+import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
+import { Routes, Route } from 'react-router-dom'
+import { createContext } from 'react'
+const ProductContext = createContext()
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("products.json").then((res) => res.json()).then((data) => setProducts(data.data))
+  }, [])
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ProductContext.Provider value={products}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" Component={Home} />
+            <Route path="/productscategory" Component={Productlist} />
+            <Route path="/cart" Component={Cart} />
+            <Route path="/checkout" Component={Checkout} />
+          </Routes>
+        </BrowserRouter>
+      </ProductContext.Provider>
     </>
   )
 }
-
 export default App
+export { ProductContext }
