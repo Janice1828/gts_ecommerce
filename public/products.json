@@ -64,7 +64,8 @@
       "category": "Cosmetics",
       "subCategory": "Perfume",
       "brand": "Chanel",
-      "rating": 4
+      "rating": 4,
+      "color": "pink"
     },
     {
       "id": 6,
@@ -118,7 +119,8 @@
       "category": "Cosmetics",
       "subCategory": "Perfume",
       "brand": "Chanel",
-      "rating": 2
+      "rating": 2,
+      "color": "black"
     },
     {
       "id": 10,
@@ -157,7 +159,8 @@
       "category": "Cosmetics",
       "subCategory": "Perfume",
       "brand": "Boss",
-      "rating": 3
+      "rating": 3,
+      "color": "red"
     },
     {
       "id": 13,
