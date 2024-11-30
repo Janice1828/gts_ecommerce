@@ -12,7 +12,9 @@ const Navbar = () => {
                             <img src={NavLogo} id='nav-logo' alt="" />
                         </Link>
                         <Link to="/cart">
-                            <FaCartShopping className='normal-text-color fs-2' />
+                            <div className='position-relative'>
+                                <FaCartShopping className='normal-text-color fs-2' />
+                            </div>
                         </Link>
                     </div>
                 </div>
